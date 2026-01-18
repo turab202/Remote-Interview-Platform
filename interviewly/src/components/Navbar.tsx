@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import { ModeToggle } from "./ModeToggle";
 import { CodeIcon } from "lucide-react";
@@ -8,7 +10,7 @@ function Navbar() {
   return (
     <nav className="border-b">
       <div className="flex h-16 items-center px-4 container mx-auto">
-        {/* LEFT SIDE -LOGO */}
+        {/* LEFT SIDE - LOGO */}
         <Link
           href="/"
           className="flex items-center gap-2 font-semibold text-2xl mr-6 font-mono hover:opacity-80 transition-opacity"
@@ -31,4 +33,5 @@ function Navbar() {
     </nav>
   );
 }
+
 export default Navbar;
